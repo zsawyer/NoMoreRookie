@@ -1,12 +1,30 @@
 Script.Load("lua/NoMoreRookie/zsLib.lua")
 
-local modName = "NoMoreRookie"
-local build   = "b0001"
+NoMoreRookie = { }
+NoMoreRookie.modName = "NoMoreRookie"
+NoMoreRookie.build   = "b0003"
 
-zsLib.init(modName, build)
-zsLib.version()
+local function init()  
+    if not zsLib.initialized then
+        zsLib.init(NoMoreRookie.modName, NoMoreRookie.build)
+        zsLib.version()
+    end
+end
 
 function setRookieLevel(newRookieLevel) 
     zsLib.message("setting rookie level to " .. newRookieLevel)
     kRookieLevel = newRookieLevel
 end
+
+function NoMoreRookie.unlockServerBrowser()
+    local settingsKey = "browserUnlocked"
+
+    local previouslyUnlocked = zsLib.getSetting(settingsKey, false)
+    if not previouslyUnlocked then
+        Client.SetOptionString("currentGameModeFilter", "ALL")
+        zsLib.message("unlocked server browser")
+        zsLib.setSetting(settingsKey, true)
+    end
+end
+
+init()
