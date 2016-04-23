@@ -1,0 +1,7 @@
+modEntry = {
+	Client    = "lua/NoMoreRookie/hooks/NoHooks.lua",
+	Server    = "lua/NoMoreRookie/hooks/NoHooks.lua",
+	Shared    = "lua/NoMoreRookie/hooks/NoHooks.lua",
+	FileHooks = "lua/NoMoreRookie/hooks/FileHooks.lua",
+	Priority  = 50
+}

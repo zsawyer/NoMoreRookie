@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+  <file>
+    <filename>source\lua\NoMoreRookie\hooks\FileHooks.lua</filename>
+  </file>
+  <file>
+    <filename>source\lua\NoMoreRookie\hooks\lua\Globals.lua</filename>
+  </file>
+  <file>
+    <filename>source\lua\NoMoreRookie\hooks\NoHooks.lua</filename>
+  </file>
+  <file>
+    <filename>source\lua\entry\NoMoreRookie.entry</filename>
+  </file>
+  <file>
+    <filename>source\lua\NoMoreRookie\NoMoreRookie.lua</filename>
+  </file>
+  <file>
+    <filename>source\lua\NoMoreRookie\zsLib.lua</filename>
+  </file>
+</project>

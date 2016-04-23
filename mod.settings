@@ -1,0 +1,13 @@
+name        = "NoMoreRookie (client-side only)"
+source_dir  = "source/"
+output_dir  = "output/"
+description = [=[This mod sets your client into non-rookie mode. 
+
+It is not server side! You will still show up green for others and might still get rejected by servers with level restrictions. 
+
+This will enable a few hidden elements that would unlock only once you have reached level 5 and are perceived as non-rookie. 
+
+This is primarily aimed at those veterans that suffer from the bug where they show up as rookies permanently even with 50+ hours. ]=]
+image       = "preview.jpg"
+tag_modtype = "Look and Feel"
+tag_support = "Passes Default Consistency"
